@@ -13,9 +13,10 @@ const decrementClick = () => {
 };
 
 decrementEl.addEventListener("click", decrementClick);
+
+
 const incrementClick = () => {
     counterVelue += 1
     countEl.textContent = counterVelue;
 }
-
 incrementEl.addEventListener("click", incrementClick);
