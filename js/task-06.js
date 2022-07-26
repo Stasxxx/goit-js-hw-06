@@ -4,7 +4,7 @@ const limitValue = inputEl.getAttribute('data-length')
 inputEl.addEventListener('blur', onInputChange);
 
 function onInputChange (event) {
-    if (event.currentTarget.value.length <= limitValue) {
+    if (event.currentTarget.value.length === Number(limitValue)) {
         inputEl.classList.add('valid');
          inputEl.classList.remove('invalid');
     } else {
@@ -13,4 +13,3 @@ function onInputChange (event) {
     }
    
 }
-

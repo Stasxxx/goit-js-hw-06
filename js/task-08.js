@@ -7,11 +7,15 @@ function onFormSubmit(event) {
 
     const elements = event.currentTarget.elements;
     const email = elements.email.value;
-    const password = elements.email.value;
+    const password = elements.password.value;
 
-    if (email === "" || password === "") {
-    return console.log("Please fill in all the fields!");
-    }
+    // const {
+    //     elements: { email, password }
+    // } = event.currentTarget;
+
+    if (password === "" || email === "") {
+    return console.log("Alert!");
+    };
     
     const formData = {
         email: email,

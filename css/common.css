@@ -23,11 +23,7 @@ button {
   cursor: pointer;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 
 .gallery {
 display: flex;
@@ -36,7 +32,13 @@ justify-content: center;
 
 .item {
 list-style: none;
+background-size: cover;
+width: 500px;
+}
 
+.item-img {
+  width: 300px;
+  
 }
 .item:not(:last-child) {
   margin-right: 30px;

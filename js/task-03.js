@@ -14,12 +14,15 @@ const images = [
 ];
 
 
-
-
-
 const galleryItemsEl = images
-  .map(({ url, alt }) => `<li class="item"><img class="item-img" src=${url} alt= '${alt}' width='300'></li>`)
-  .join("");
+  .reduce((item, {url, alt}) => {
+    return item +`<li class="item"><img class="item-img" src=${url} alt= '${alt}' width='300px' height='200px'></li>`
+  }, '')
+
+
+// const galleryItemsEl = images
+//   .map(({ url, alt }) => `<li class="item"><img class="item-img" src=${url} alt= '${alt}' width='300px' height='200px'></li>`)
+//   .join("");
 
 
 const galleryEl = document.querySelector('.gallery');
